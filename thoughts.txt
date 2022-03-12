@@ -1,0 +1,33 @@
+0 0 0
+0 x 0 => Bei 3 lebenden Nachbarn wird die Zelle in der nächsten gen geboren
+1 1 1
+
+0 0 0
+0 x 0 => Bei <2 lebenden Nachbarn stirbt die Zelle 
+0 0 1
+
+0 0 0
+1 x 0 => Eine lebende Zelle mit zwei oder drei lebenden Nachbarn bleibt in der Folgegeneration am Leben
+0 1 1
+
+1 1 1
+1 x 1 => Lebende Zellen mit mehr als drei lebenden Nachbarn sterben in der Folgegeneration an Überbevölkerung
+1 1 1
+
+Für Evolve: 1. Nachbarn zählen
+
+i-w-1 i-w i-w+1
+i-1   i   i+1
+i+w-1 i+w i+w+1
+
+-> 1en in der Nachbarschaft zählen
+
+9 Pointer auf jedes Element
+
+Blöcke weiter schieben
+
+Pointer dereferenzieren und Aufaddieren
+
+Regel anwenden
+
+Randbedingung nach der Berechnung clearen
